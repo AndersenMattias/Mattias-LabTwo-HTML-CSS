@@ -33,7 +33,10 @@ body {
   text-transform: uppercase;
   font-size: 1,5rem;  
   color: white;
+}
 
+.mainNav a:hover {
+  background-color: rgb(46, 43, 43);
 }
 
 footer  {
