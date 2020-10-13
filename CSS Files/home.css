@@ -12,6 +12,7 @@ body {
 .container {
   display: grid;
   grid-gap: 20px;
+  /* height: 1500px; */
 }
 
 .mainNav {
@@ -39,12 +40,30 @@ body {
   background-color: rgb(46, 43, 43);
 }
 
+
 footer  {
   margin-top: 2rem;
   background-color: black;
   text-align: left;
   padding: 1rem;
   color: white;
+}
+
+.socialMedia {
+  display: flex;  
+  justify-content: flex-end;
+}
+
+#fabOne {
+  color: white;
+  padding: 10px;
+  font-size: 35px;  
+}
+
+#fabTwo {
+  color: #0072b1;
+  padding: 10px;
+  font-size: 35px;  
 }
 
 
