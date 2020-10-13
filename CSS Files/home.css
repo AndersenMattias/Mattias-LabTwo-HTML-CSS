@@ -1,64 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-
-header {  
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: black; 
-  width: auto;
-} 
-
-.nav-links li {
-  display: inline-block;  
-  padding: 0 20px;  
-}
-
-li, a, button {
+html {
+  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.mainNav {
+  background-color: black;
+}
+
+/* nav bar */
+.mainNav ul {
+  display: grid;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);  
+}
+
+.mainNav a {
+  display: block;
   text-decoration: none;
-  color: white;
-  font-weight: 500px;
-  font-size: 20px;
-  padding: 20px;
-}
-
-#profile-image {
-  cursor: pointer;
-  margin-right: auto;
-  width: 6%;
-}
-
-h2 {
-  color: black;
-  font-family: 'Montserrat' sans-serif;
-  font-size: 3rem;
   text-align: center;
-}
-
-.info p {
-  color: rgb(0, 30, 255);
-  font-size: 3rem;
-}
-
-
-footer {
-  width: 80%;
-  margin: 0 auto;
-  padding: 100px 0;
-}
-
-.footer p {
-  color: black;
-}
-
-@media screen and (max-width: 480px) {
-
-  html {
-    background-color: blueviolet;
-  }
+  text-transform: uppercase;
+  font-size: 1,5rem;  
+  color: white;
 
 }
+
+footer  {
+  margin-top: 2rem;
+  background-color: black;
+  text-align: left;
+  padding: 1rem;
+  color: white;
+}
+
+
+
+
 
 
 
