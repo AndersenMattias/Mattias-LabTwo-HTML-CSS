@@ -1,55 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/CSS Files/index.css">
+  <link rel="stylesheet" href="/CSS Files/home.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mattias Simonsson</title>
 </head>
 
-<header>  
-  <img id="profile-image" src="/Images/profile-image.png" alt="profile-picture">
-  <nav class="nav-links">    
-    <ul>
-      <li><a href="/HTML Files/home.html">HOME</a></li>
-      <li><a href="/HTML Files/portfolio.html">PORTFOLIO</a></li>
-      <li><a href="/HTML Files/about.html">ABOUT</a></li>
-      <li><a id="contact-button" href="/HTML Files/contact.html">CONTACT</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+<body>
+  <!-- start of wrap -->
+  <div class="container">
+    <nav class="mainNav">
+      
+      <ul>
+        <li><a href="home.html">home</a></li>
+        <li><a href="/HTML Files/portfolio.html">portfolio</a></li>
+        <li><a href="/HTML Files/about.html">about</a></li>
+        <li><a href="/HTML Files/contact.html">contact</a></li>
+      </ul>
+    </nav>
 
-<body> 
-  <h1>Mattias Simonsson</h1>
+    <div class="topContainer">
+      <header>
+        <h1>Mattias Simonsson</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia ratione ab,
+           incidunt tenetur ducimus atque ullam dicta! Aperiam, impedit.</p>
+      </header>
+    </div>
 
-  <div class="kort-om-mig">
-    <p>Den här <em>texten</em> ligger bara här för att att jag ska visa att jag ha tagit till mig den kunskapen som har lärts ut.<br>
-    Denna text kommer inom kort att uppdateras och flyttas till <b>"om mig"</b> Nedan kommer en trevlig text ni aldrig sett förr, enjoy!</p>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis sem, volutpat quis elementum eget, iaculis et diam. Integer at bibendum tortor.
-      Quisque placerat nibh id congue scelerisque. <br><br> Maecenas elit massa, egestas id dictum a, tempor non nisi. Proin convallis gravida blandit.
-      Aliquam non risus vel enim tincidunt dictum quis eu nulla. Integer non suscipit est. Curabitur malesuada porta lectus, vitae vestibulum nibh bibendum sit amet.
-    </p>
-  </div> 
-
- 
-
-  <!-- div används för en sektion, underlättar när man ska style i t.ex CSS med class eller ID -->
-  <!-- class kan användas för flera element, ID används för ett specifikt / unikt element -->
-  <!-- br hoppar en rad som t.ex "ENTER" -->
-  <!-- h1 en av sex olika headings, större siffra mindre storlek -->
-  <!-- p en paragraph för brödtext -->
-  <!-- ul lista skapar "punkter" medan OL skapar siffror 1,2,3 osv -->
-  <!-- a ett så kallat ankare för att länka till något, hemsida, ny flik  -->  
-
+    <footer>
+      <p>Mattias Simonsson &copy; 2020</p>
+      <div class="socialMedia">
+        <a href="https://www.linkedin.com/in/mattiassimonsson/"><i class="fab-fa-linkedin"></i></a>
+      </div>
+      
+    </footer>
+  </div>
+  <!-- end of wrap -->
 </body>
-
-<footer> 
-  <div class="footer">
-    <p>© 2020 Mattias Simonsson</p>
-  </div>  
-</footer>
-
 </html>
