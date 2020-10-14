@@ -51,11 +51,33 @@ header a:hover {
   background-color: rgb(46, 43, 43);
 }
 
+  
+.project-one { 
+  grid-area: 1 / 2 / 2 / 3; 
+}
+
+.project-two {
+   grid-area: 1 / 3 / 2 / 4;
+}
+ 
+.project-three {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.project-four {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.project-five {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
 .project-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   justify-items: center;
-  gap: 1rem;    
+
 }
 
 .project-container img {
@@ -63,8 +85,9 @@ header a:hover {
   width: auto;
 }
 
-.project-card {
-  border-radius: 20%;
+.project-container p {
+  text-align: center;
+  color: black;
 }
 
 
