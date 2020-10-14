@@ -58,8 +58,13 @@ header a:hover {
   gap: 1rem;    
 }
 
+.project-container img {
+  height: 200px;
+  width: auto;
+}
+
 .project-card {
-  border: solid black;
+  border-radius: 20%;
 }
 
 
