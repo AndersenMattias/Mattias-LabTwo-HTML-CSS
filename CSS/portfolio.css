@@ -51,6 +51,18 @@ header a:hover {
   background-color: rgb(46, 43, 43);
 }
 
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 1rem;    
+}
+
+.project-card {
+  border: solid black;
+}
+
+
 footer {
   background-color: black;
   position: fixed;
