@@ -10,8 +10,6 @@
 html {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-
-
 }
 
 body {
@@ -59,6 +57,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   position: relative;
+  padding: 0px 10px 0px 10px;
 }
 
 .icons li {
