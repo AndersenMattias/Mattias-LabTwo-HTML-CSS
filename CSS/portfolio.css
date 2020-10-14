@@ -7,21 +7,22 @@
   text-decoration: none;
 }
 
+
+
+
+
 html {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background-color: white;
-  /* background-image: url(/Images/background-one.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
+  background-color: rgba(235, 235, 235, 0.817);
+ 
 }
 
 .container {
-  display: grid;
-  grid-gap: 20px;
+  height: 1500px;
 }
 
 header {
@@ -34,8 +35,8 @@ header {
 
 /* nav bar */
 header ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  display: flex;
+  justify-content: space-evenly;
   font-size: 20px; 
 }
 
@@ -45,6 +46,7 @@ header a {
   text-transform: uppercase;
   font-size: 1,5rem;  
   color: white;
+  margin: 0 10px;
 }
 
 header a:hover {
@@ -53,9 +55,31 @@ header a:hover {
 
 .project-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem; 
+  margin: 20px 0;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: repeat(5, 1fr); */
   justify-items: center;
-  gap: 1rem;    
+}  
+
+.project-one { 
+  grid-area: 1 / 2; 
+}
+
+.project-two {
+   grid-area: 1 / 3;
+}
+ 
+.project-three {
+  grid-area: 1 / 4;
+}
+
+.project-four {
+  grid-area: 3 / 2;
+}
+
+.project-five {
+  grid-area: 3 / 3;
 }
 
 .project-container img {
@@ -63,16 +87,18 @@ header a:hover {
   width: auto;
 }
 
-.project-card {
-  border-radius: 20%;
+.project-container p {
+  text-align: center;
+  color: black;
 }
 
 
 footer {
   background-color: black;
-  position: fixed;
-  bottom: 0px;
+  position: relative;
+  bottom: 0px; 
   width: 100%;
+  height: 100px;
 }
 
 .icons {
@@ -90,11 +116,117 @@ footer p {
 .fa-github {
   color:white;
   font-size: 40px;
-  padding: 15px
+  padding-top: 10px;
+  margin-right: 10px;  
 }
 
 .fa-linkedin {
   color:  #0072b1;
   font-size: 40px;
-  padding: 15px;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .project-container {
+    grid-template-columns: 1fr 1fr;   
+    gap: 1rem; 
+    margin: 20px 0;
+    }
+  
+    .project-one {      
+    grid-row-start: auto;
+    grid-column-start: 1;
+    grid-row-end: auto;
+    grid-column-end: 2;
+    }
+    
+    .project-two {
+       
+         grid-row-start: auto;
+    grid-column-start: 2;
+    grid-row-end: auto;
+    grid-column-end: 3;
+    }
+     
+    .project-three {      
+    grid-row-start: auto;
+    grid-column-start: 1;
+    grid-row-end: auto;
+    grid-column-end: 2;
+    }
+    
+    .project-four {     
+    grid-row-start: auto;
+    grid-column-start: 2;
+    grid-row-end: auto;
+    grid-column-end: 3;
+    }
+    
+    .project-five {     
+    grid-row-start: auto;
+    grid-column-start: 1;
+    grid-row-end: auto;
+    grid-column-end: 2;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+  header ul {
+    font-size: 15px; 
+  }
+
+  .project-container {
+  grid-template-columns: 1fr;
+  
+  grid-column-start: auto;  
+  grid-column-end: auto;
+  }
+
+  .project-one { 
+    /* grid-area: 1 / 2;  */
+      grid-row-start: auto;
+  grid-column-start: 1;
+  grid-row-end: auto;
+  grid-column-end: 2;
+  }
+  
+  .project-two {
+     /* grid-area: 1 / 2; */
+       grid-row-start: auto;
+  grid-column-start: 1;
+  grid-row-end: auto;
+  grid-column-end: 2;
+  }
+   
+  .project-three {
+    /* grid-area: 1 / 2; */
+      grid-row-start: auto;
+  grid-column-start: 1;
+  grid-row-end: auto;
+  grid-column-end: 2;
+  }
+  
+  .project-four {
+    /* grid-area: 1 / 2; */
+      grid-row-start: auto;
+  grid-column-start: 1;
+  grid-row-end: auto;
+  grid-column-end: 2;
+  }
+  
+  .project-five {
+    /* grid-area: 1 / 2; */
+      grid-row-start: auto;
+  grid-column-start: 1;
+  grid-row-end: auto;
+  grid-column-end: 2;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  header ul {
+    font-size: 15px; 
+  }
 }
