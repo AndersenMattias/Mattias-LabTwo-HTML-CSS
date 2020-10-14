@@ -14,9 +14,9 @@ html {
 
 body {
   background-color: white;
-  background-image: url(/Images/background-one.jpg);
+  /* background-image: url(/Images/background-one.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .container {
@@ -24,17 +24,22 @@ body {
   grid-gap: 20px;
 }
 
-.mainNav {
+header {
   background-color: black;
+  height: 40px;
+  padding-top: 20px;
 }
+
+
 
 /* nav bar */
-.mainNav ul {
+header ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  
+  grid-template-columns: repeat(4, 1fr); 
+  font-size: 20px; 
 }
 
-.mainNav a {
+header a {
   display: block;
   text-align: center;
   text-transform: uppercase;
@@ -42,7 +47,7 @@ body {
   color: white;
 }
 
-.mainNav a:hover {
+header a:hover {
   background-color: rgb(46, 43, 43);
 }
 
@@ -57,12 +62,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  padding: 0px 10px 0px 10px;
-}
-
-.icons li {
-  padding: 15px;
-  font-size: 30px;
+  padding: 0px 25px 15px 10px;
 }
 
 footer p {
@@ -72,8 +72,12 @@ footer p {
 
 .fa-github {
   color:white;
+  font-size: 40px;
+  padding: 15px
 }
 
 .fa-linkedin {
   color:  #0072b1;
+  font-size: 40px;
+  padding: 15px;
 }
