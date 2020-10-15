@@ -50,6 +50,32 @@ header a:hover {
   background-color: rgb(46, 43, 43);
 }
 
+#video-background {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+
+.overlay-text { 
+  padding-top: 100px;  
+} 
+
+.overlay-text h1 {
+  color: black;
+  font-size: 100px; 
+  transform: translate(10%); 
+  
+}
+
+.overlay-text h2 {
+  color:yellowgreen;
+  font-size: 100px;
+  transform: translate(25%);
+  
+}
+
 footer {
   background-color: black;
   flex-shrink: 1;
