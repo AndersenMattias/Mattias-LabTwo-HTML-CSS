@@ -90,14 +90,7 @@ header a:hover {
 
 footer {
   background-color: black;
-  flex-shrink: 0;
-}
-
-.icons {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  padding: 0px 25px 15px 10px;
+  flex-shrink: 1;
 }
 
 footer p {
@@ -105,17 +98,26 @@ footer p {
   padding: 15px 0px 0px 15px;
 }
 
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0px 25px 15px 10px;
+  margin: 10px
+}
+
 .fa-github {
   color:white;
   font-size: 40px;
   padding-top: 10px;
-  margin-right: 10px;  
+  margin: 10px;  
 }
 
 .fa-linkedin {
   color:  #0072b1;
   font-size: 40px;
   padding-top: 10px;
+  margin: 10px
 }
 
 @media screen and (max-width: 1024px) {
