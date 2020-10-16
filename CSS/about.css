@@ -13,14 +13,14 @@ html {
   height: 100%;
 }
 
-body {
-  background-color: rgba(235, 235, 235, 0.817); 
+body {  
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 .container {
+  /* background-color: rgba(235, 235, 235, 0.529);  */
   flex-grow: 1;
 }
 
@@ -49,6 +49,30 @@ header a {
 header a:hover {
   background-color: rgb(46, 43, 43);
 }
+
+#profile-img{
+  width: 10%;
+  height: auto;   
+  padding-top: 40px;
+}
+
+
+.container-about {
+  background-color: rgba(199, 199, 199, 0.824);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-left: 150px;
+
+} 
+
+.about-me p {  
+  color: black;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  width: 40%;
+}
+
 
 footer {
   background-color: black;
