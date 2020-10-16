@@ -50,12 +50,6 @@ header a:hover {
   background-color: rgb(46, 43, 43);
 }
 
-#video-background {
-  position: fixed;
-  z-index: -1;
-  width: 100%;
-  height: auto;
-}
 
 
 .overlay-text { 
@@ -107,6 +101,7 @@ footer p {
   padding-top: 10px;
   margin: 10px
 }
+
 
 @media screen and (max-width: 768px) {
   header ul {
