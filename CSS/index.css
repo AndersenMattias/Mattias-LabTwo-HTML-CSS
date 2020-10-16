@@ -28,6 +28,8 @@ header {
   background-color: black;
   height: 40px;
   padding-top: 20px;
+  position: absolute;
+  width: 100%;
 }
 
 /* nav bar */
@@ -48,6 +50,15 @@ header a {
 
 header a:hover {
   background-color: rgb(46, 43, 43);
+}
+
+.container-presentation  {
+  background-image: url(/Images/background-mountain.jpg);
+  padding-top: 60px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: calc(100vh - 199px);
 }
 
 
