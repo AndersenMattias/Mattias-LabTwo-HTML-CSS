@@ -8,19 +8,21 @@
 }
 
 html {
+  
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   height: 100%;
 }
 
 body {  
+
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 .container {
-  /* background-color: rgba(235, 235, 235, 0.529);  */
+  
   flex-grow: 1;
 }
 
