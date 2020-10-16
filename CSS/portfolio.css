@@ -7,22 +7,21 @@
   text-decoration: none;
 }
 
-
-
-
-
 html {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  height: 100%;
 }
 
 body {
-  background-color: rgba(235, 235, 235, 0.817);
- 
+  background-color: rgba(199, 199, 199, 0.824);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .container {
-  height: 1500px;
+  flex-grow: 1;
 }
 
 header {
@@ -30,8 +29,6 @@ header {
   height: 40px;
   padding-top: 20px;
 }
-
-
 
 /* nav bar */
 header ul {
@@ -53,12 +50,13 @@ header a:hover {
   background-color: rgb(46, 43, 43);
 }
 
+
 .project-container {
+  
   display: grid;
   gap: 1rem; 
   margin: 20px 0;
-  grid-template-columns: repeat(5, 1fr);
-  /* grid-template-rows: repeat(5, 1fr); */
+  grid-template-columns: repeat(5, 1fr);  
   justify-items: center;
 }  
 
@@ -92,20 +90,9 @@ header a:hover {
   color: black;
 }
 
-
 footer {
   background-color: black;
-  position: relative;
-  bottom: 0px; 
-  width: 100%;
-  height: 100px;
-}
-
-.icons {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  padding: 0px 25px 15px 10px;
+  flex-shrink: 1;
 }
 
 footer p {
@@ -113,116 +100,116 @@ footer p {
   padding: 15px 0px 0px 15px;
 }
 
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0px 25px 15px 10px;
+  margin: 10px
+}
+
 .fa-github {
   color:white;
   font-size: 40px;
   padding-top: 10px;
-  margin-right: 10px;  
+  margin: 10px;  
 }
 
 .fa-linkedin {
   color:  #0072b1;
   font-size: 40px;
   padding-top: 10px;
+  margin: 10px
 }
 
 @media screen and (max-width: 1024px) {
-  .project-container {
-    grid-template-columns: 1fr 1fr;   
-    gap: 1rem; 
-    margin: 20px 0;
-    }
-  
-    .project-one {      
-    grid-row-start: auto;
-    grid-column-start: 1;
-    grid-row-end: auto;
-    grid-column-end: 2;
-    }
-    
-    .project-two {
-       
-         grid-row-start: auto;
-    grid-column-start: 2;
-    grid-row-end: auto;
-    grid-column-end: 3;
-    }
-     
-    .project-three {      
-    grid-row-start: auto;
-    grid-column-start: 1;
-    grid-row-end: auto;
-    grid-column-end: 2;
-    }
-    
-    .project-four {     
-    grid-row-start: auto;
-    grid-column-start: 2;
-    grid-row-end: auto;
-    grid-column-end: 3;
-    }
-    
-    .project-five {     
-    grid-row-start: auto;
-    grid-column-start: 1;
-    grid-row-end: auto;
-    grid-column-end: 2;
-    }
+.project-container {
+  grid-template-columns: 1fr 1fr;   
+  gap: 1rem; 
+  margin: 20px 0;
 }
-
+  
+.project-one {      
+  grid-row-start: auto;
+  grid-column-start: 1;
+  grid-row-end: auto;
+  grid-column-end: 2;
+}
+    
+.project-two {
+  grid-row-start: auto;
+  grid-column-start: 2;
+  grid-row-end: auto;
+  grid-column-end: 3;
+}
+     
+.project-three {      
+  grid-row-start: auto;
+  grid-column-start: 1;
+  grid-row-end: auto;
+  grid-column-end: 2;
+}
+    
+.project-four {     
+  grid-row-start: auto;
+  grid-column-start: 2;
+  grid-row-end: auto;
+  grid-column-end: 3;
+}
+    
+.project-five {     
+  grid-row-start: auto;
+  grid-column-start: 1;
+  grid-row-end: auto;
+  grid-column-end: 2;
+  }
+}
 
 @media screen and (max-width: 768px) {
   header ul {
     font-size: 15px; 
-  }
+}
 
-  .project-container {
+.project-container {
   grid-template-columns: 1fr;
-  
   grid-column-start: auto;  
   grid-column-end: auto;
-  }
+}
 
-  .project-one { 
-    /* grid-area: 1 / 2;  */
-      grid-row-start: auto;
+.project-one { 
+  grid-row-start: auto;
   grid-column-start: 1;
   grid-row-end: auto;
   grid-column-end: 2;
-  }
+}
   
-  .project-two {
-     /* grid-area: 1 / 2; */
-       grid-row-start: auto;
+.project-two {
+  grid-row-start: auto;
   grid-column-start: 1;
   grid-row-end: auto;
   grid-column-end: 2;
-  }
+}
    
-  .project-three {
-    /* grid-area: 1 / 2; */
-      grid-row-start: auto;
+.project-three {
+  grid-row-start: auto;
   grid-column-start: 1;
   grid-row-end: auto;
   grid-column-end: 2;
-  }
+}
   
-  .project-four {
-    /* grid-area: 1 / 2; */
-      grid-row-start: auto;
+.project-four {
+  grid-row-start: auto;
   grid-column-start: 1;
   grid-row-end: auto;
   grid-column-end: 2;
-  }
+}
   
-  .project-five {
-    /* grid-area: 1 / 2; */
-      grid-row-start: auto;
+.project-five {
+  grid-row-start: auto;
   grid-column-start: 1;
   grid-row-end: auto;
   grid-column-end: 2;
-  }
-
+ }
 }
 
 @media screen and (max-width: 425px) {

@@ -8,20 +8,22 @@
 }
 
 html {
+  
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  height: 100%;
 }
 
-body {
-  background-color: white;
-  /* background-image: url(/Images/background-one.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
+body {  
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .container {
-  display: grid;
-  grid-gap: 20px;
+  
+  flex-grow: 1;
 }
 
 header {
@@ -30,12 +32,10 @@ header {
   padding-top: 20px;
 }
 
-
-
 /* nav bar */
 header ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  display: flex;
+  justify-content: space-evenly;
   font-size: 20px; 
 }
 
@@ -45,24 +45,40 @@ header a {
   text-transform: uppercase;
   font-size: 1,5rem;  
   color: white;
+  margin: 0 10px;
 }
 
 header a:hover {
   background-color: rgb(46, 43, 43);
 }
 
-footer {
-  background-color: black;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
+#profile-img{
+  width: 10%;
+  height: auto;   
+  padding-top: 40px;
 }
 
-.icons {
+
+.container-about {
+  background-color: rgba(199, 199, 199, 0.824);
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  position: relative;
-  padding: 0px 25px 15px 10px;
+  padding-left: 150px;
+
+} 
+
+.about-me p {  
+  color: black;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  width: 40%;
+}
+
+
+footer {
+  background-color: black;
+  flex-shrink: 1;
 }
 
 footer p {
@@ -70,14 +86,36 @@ footer p {
   padding: 15px 0px 0px 15px;
 }
 
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0px 25px 15px 10px;
+  margin: 10px
+}
+
 .fa-github {
   color:white;
   font-size: 40px;
-  padding: 15px
+  padding-top: 10px;
+  margin: 10px;  
 }
 
 .fa-linkedin {
   color:  #0072b1;
   font-size: 40px;
-  padding: 15px;
+  padding-top: 10px;
+  margin: 10px
+}
+
+@media screen and (max-width: 768px) {
+  header ul {
+    font-size: 15px; 
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header ul {
+    font-size: 15px; 
+  }
 }
