@@ -66,7 +66,7 @@ a:hover {
   transition: .5s;
 } 
 
-nav .menu-btn i{
+.menu-btn i{
   color: #fff;
   font-size: 22px;
   cursor: pointer;
@@ -191,12 +191,12 @@ input[type="checkbox"]{
   color: black;
 }
 
-footer {
+.foot {
   background-color: black;
   flex-shrink: 1;
 }
 
-footer p {
+.foot p {
   color: white;
   padding: 15px 0px 0px 15px;
 }
