@@ -22,7 +22,7 @@ body {
   display: flex;
   height: 80px;
   width: 100%;
-  background: rgb(103, 119, 104);
+  background-color: rgb(69, 85, 70);
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
@@ -86,7 +86,7 @@ input[type="checkbox"]{
 
 
 footer {
-  background-color: black;
+  background-color: rgb(69, 85, 70);
   flex-shrink: 1;
 }
 
@@ -134,8 +134,6 @@ footer p {
     top: 20px;
     right: 20px;
   }
-
-
 
   .navigation ul{
     position: absolute;
