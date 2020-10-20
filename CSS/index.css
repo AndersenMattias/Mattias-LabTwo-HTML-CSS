@@ -5,81 +5,85 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-}
-
-html {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  height: 100%;
 }
 
-body {
-  background-color: rgba(199, 199, 199, 0.824);
+body {  
+  font-family: 'Montserrat'sans-serif;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .container {
   flex-grow: 1;
 }
 
-header {
-  background-color: black;
-  height: 40px;
-  padding-top: 20px;
-  position: absolute;
-  width: 100%;
-}
-
-/* nav bar */
-header ul {
+.navigation{
   display: flex;
-  justify-content: space-evenly;
-  font-size: 20px; 
+  height: 80px;
+  width: 100%;
+  background: rgb(103, 119, 104);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  z-index: 1;
 }
 
-header a {
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1,5rem;  
+.logo{
+  float: right;
   color: white;
-  margin: 0 10px;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 25px;
+  font-weight: bold;
 }
 
-header a:hover {
-  background-color: rgb(46, 43, 43);
+.navigation ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;  
+  z-index: 1;
 }
 
-.container-presentation  {
+.navigation ul li{
+  margin: 0 5px;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+.navigation ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;  
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background: rgb(93, 109, 94);
+  transition: .5s;
+} 
+
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+.container {
   background-image: url(/Images/background-mountain.jpg);
-  padding-top: 60px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  min-height: calc(100vh - 199px);
+  min-height: calc(100vh - 139px);
 }
 
-
-
-.overlay-text { 
-  padding-top: 100px;  
-} 
-
-.overlay-text h1 {
-  color: black;
-  font-size: 100px; 
-  transform: translate(10%); 
-  
-}
-
-.overlay-text h2 {
-  color:yellowgreen;
-  font-size: 100px;
-  transform: translate(25%);
-  
-}
 
 footer {
   background-color: black;
@@ -116,13 +120,58 @@ footer p {
 
 
 @media screen and (max-width: 768px) {
-  header ul {
-    font-size: 15px; 
-  }
+ 
 }
 
 @media screen and (max-width: 425px) {
-  header ul {
-    font-size: 15px; 
+
+  .navigation .menu-btn i{
+    display: block;
   }
+
+  label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+
+
+  .navigation ul{
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background: rgb(103, 119, 104);
+    /* height: 100vh; */
+    width: 100%;
+    text-align: center;
+    display: block;    
+  }
+
+  a:hover {
+    background: rgb(93, 109, 94);
+    transition: .5s;
+  } 
+
+  #click:checked ~ ul{
+    left: 0;
+  }
+
+  .navigation ul li{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .navigation ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;   
+  }
+  
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  
 }
+
+
