@@ -18,12 +18,11 @@ body {
   flex-grow: 1;
 }
 
-
 .navigation{
   display: flex;
   height: 80px;
   width: 100%;
-  background: rgb(103, 119, 104);
+  background-color: rgb(69, 85, 70);
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
@@ -78,17 +77,17 @@ input[type="checkbox"]{
 }
 
 .container {
-  background-color: rgb(84, 82, 82);
+  background-color: rgb(102, 108, 102);
   min-height: calc(100vh - 139px);
 }
 
 
-footer {
-  background-color: black;
+.foot {
+  background-color: rgb(69, 85, 70);
   flex-shrink: 1;
 }
 
-footer p {
+.foot p {
   color: white;
   padding: 15px 0px 0px 15px;
   align-self: center;
@@ -116,14 +115,51 @@ footer p {
   margin: 10px
 }
 
-.project-container {
-  
+.project-container {  
   display: grid;
   gap: 1rem; 
   margin: 20px 0;
   grid-template-columns: repeat(5, 1fr);  
   justify-items: center;
 }  
+
+/* HÄR NEDAN ÄR BEM KLASSERNA */
+
+.btn {  
+  display: block;
+  font-size: 20px;  
+  border:  10px dotted;  
+  cursor: pointer;
+  font: 30px/40px Helvetica, arial; 
+  padding: 20px;
+}
+
+.btn--one {
+  background-color: rgb(191, 16, 16);
+  color: blue;
+}
+
+.btn--two {
+  background-color: rgb(120, 108, 108);
+  color: indianred;
+}
+
+.btn--three {
+  background-color: crimson;
+  color: darkorange;
+}
+
+.btn--four {
+  background-color: darkorchid;
+  color: lightcoral;
+}
+
+.btn--five {
+  background-color: purple;
+  color: rgb(61, 194, 170);
+}
+
+/* OVAN ÄR BEM CSS */
 
 .project-one { 
   grid-area: 1 / 2; 
@@ -231,9 +267,51 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  header ul {
-    font-size: 15px; 
-}
+
+  .navigation .menu-btn i{
+    display: block;
+  }
+
+  label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .navigation ul{
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background: rgb(103, 119, 104); 
+    width: 100%;
+    text-align: center;
+    display: block;    
+  }
+
+  a:hover {
+    background: rgb(93, 109, 94);
+    transition: .5s;
+  } 
+
+  #click:checked ~ ul{
+    left: 0;
+  }
+
+  .navigation ul li{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .navigation ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;   
+  }
+  
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+
 
 .project-container {
   grid-template-columns: 1fr;
@@ -241,40 +319,13 @@ footer p {
   grid-column-end: auto;
 }
 
-.project-one { 
+.project { 
   grid-row-start: auto;
   grid-column-start: 1;
   grid-row-end: auto;
   grid-column-end: 2;
 }
-  
-.project-two {
-  grid-row-start: auto;
-  grid-column-start: 1;
-  grid-row-end: auto;
-  grid-column-end: 2;
-}
-   
-.project-three {
-  grid-row-start: auto;
-  grid-column-start: 1;
-  grid-row-end: auto;
-  grid-column-end: 2;
-}
-  
-.project-four {
-  grid-row-start: auto;
-  grid-column-start: 1;
-  grid-row-end: auto;
-  grid-column-end: 2;
-}
-  
-.project-five {
-  grid-row-start: auto;
-  grid-column-start: 1;
-  grid-row-end: auto;
-  grid-column-end: 2;
- }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -292,15 +343,14 @@ footer p {
   label {
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 20px;
   }
 
   .navigation ul{
     position: absolute;
     top: 80px;
     left: -100%;
-    background: rgb(103, 119, 104);
-    /* height: 100vh; */
+    background: rgb(103, 119, 104);    
     width: 100%;
     text-align: center;
     display: block;    
