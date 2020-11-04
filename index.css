@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {  
+  font-family: 'Montserrat'sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.navigation{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(69, 85, 70);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.logo{
+  float: right;
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 25px;
+  font-weight: bold;
+}
+
+.navigation ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;  
+  z-index: 1;
+}
+
+.navigation ul li{
+  margin: 0 5px;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+.navigation ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;  
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background: rgb(93, 109, 94);
+  transition: .5s;
+} 
+
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+.container {
+  background-image: url(/Images/background-mountain.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: calc(100vh - 139px);
+}
+
+
+footer {
+  background-color: rgb(69, 85, 70);
+  flex-shrink: 1;
+}
+
+footer p {
+  color: white;
+  padding: 15px 0px 0px 15px;
+  align-self: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0px 25px 15px 10px;
+  margin: 10px
+}
+
+.fa-github {
+  color:white;
+  font-size: 40px;
+  padding-top: 10px;
+  margin: 10px;  
+}
+
+.fa-linkedin {
+  color:  #0072b1;
+  font-size: 40px;
+  padding-top: 10px;
+  margin: 10px
+}
+
+
+@media screen and (max-width: 768px) {
+ 
+}
+
+@media screen and (max-width: 425px) {
+
+  .navigation .menu-btn i{
+    display: block;
+  }
+
+  label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .navigation ul{
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background: rgb(103, 119, 104);
+    /* height: 100vh; */
+    width: 100%;
+    text-align: center;
+    display: block;    
+  }
+
+  a:hover {
+    background: rgb(93, 109, 94);
+    transition: .5s;
+  } 
+
+  #click:checked ~ ul{
+    left: 0;
+  }
+
+  .navigation ul li{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .navigation ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;   
+  }
+  
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  
+}
+
+
